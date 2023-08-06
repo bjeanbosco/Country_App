@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/319b23d1fe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="head" class="head border">
+        <h3>Where in The world?</h3>
+        <div class="dark" id="dark"><i class="fa">&#xf186;</i>  Dark Mode</div>
+    </header>
+    <div class="container" id="container">
+       
+        <section class="search" id="display">
+            <div id="input">
+                <button class="head" id="btn"><i class="fa">&#xf002;</i></button>
+                <input type="search"  id="search" class="head" placeholder="Search for a country">
+            </div>
+            <div>
+            <select  id="select" class="head">
+                <option value="Filter by Region">Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+               
+            </select>
+        </div>
+        </section>
+        <a href="index.html"><button class="result fa"  id="result">&#xf060; Back</button></a>
+        <h5 class="result" id="h5">Your search result</h5>
+        <div id="singleCountry"></div>
+        <div id="content" class="content"></div>
+        
+    </div>
+    <div id="link" class="btn"></div>
+    <div id="single"></div>
+    <script src="app.js"></script>
+</body>
+</html>
