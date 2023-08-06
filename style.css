@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  
+}
+:root{
+    --Dark-Blue: hsl(209, 23%, 22%);
+    --Very-Dark-Blue-back: hsl(207, 26%, 17%);
+    --Very-Dark-Blue-text: hsl(200, 15%, 8%);
+    --Dark-Gray: hsl(0, 0%, 52%);
+    --Very-Light-Gray-back: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--Very-Light-Gray-back);
+    color: var(--Very-Dark-Blue-text);
+    --border: whitesmoke;
+    
+}
+div{
+    font-family: sans-serif;
+}
+header,section{
+    display: flex;
+    justify-content: space-between; 
+    
+}
+section{
+padding: 30px 30px 50px 30px;
+}
+header{
+    border-bottom: 5px solid var(--border);
+    height: 80px;
+    line-height: 50px;
+    padding: 0 30px;
+}
+section{
+    padding-top: 40px;
+}
+.dark{
+    cursor: pointer;
+}
+.content{
+   
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.card{
+    cursor: pointer;
+}
+.card,.africa,.asia,.oceania,.americas,.europe{
+    flex-basis: 250px;
+    height: auto;
+    border: 4px solid var(--border);
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.some div{
+  padding: 0 15px;
+}
+h4{
+    padding: 10px 15px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+button{
+padding: 5px 5px 5px 9px;
+border: none;
+outline: 0;
+background-color: var(--Very-Light-Gray-back);
+filter: brightness(2);
+color: black;
+font-weight: bolder;
+cursor: pointer;
+}
+input{
+    flex-basis: 200px;
+    padding: 5px 10px;
+    border: none;
+    outline: 0;
+}
+#input{
+    display: flex;
+}
+#select{
+    padding: 5px 10px;
+    flex-basis: 220px;
+}
+.result{
+    display: none;
+}
+#result{
+    padding: 5px 20px;
+    width: 100px;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 4px;
+    display: none;
+}
+#h5{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.count{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.count img{
+    width: 400px;
+    height: auto;
+}
+.details div{
+    padding: 4px 0;
+}
+
+/*the code below this line is for much details about country*/
+
+
+.Nation{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  
+   flex-wrap: wrap;
+}
+.img{
+    width: 300px;
+    height: auto;
+    align-self: center;
+}
+.infor{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+.infor div{
+    padding: 3px 0;
+}
+.btn{
+    margin-left: 30px;
+    cursor: pointer;
+    width: 90px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 40px;
+    font-weight: bolder;
+    transform: translateY(-90%);
+}
+.next button{
+    margin: 0 10px;
+    background-color:  rgb(31, 30, 30);
+   flex-basis: 90px;
+    padding:0 10px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 100;
+    flex-grow: 1;
+
+}
+.next {
+    display: flex;
+}
+.next{
+    flex-grow: 1;
+}
+/*the code above this line is for much details about country*/
+@media (max-width: 375px){
+
+    .search{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+.Nation{
+    display: flex;
+    gap: 30px;
+   flex-wrap: wrap;
+   justify-content: center;
+   flex-direction: column;
+}
+.infor{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+    
+}
+.count{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.count img{
+    width: 90%;
+    height: auto;
+}
+.infor div,h4{
+    margin-left: 15px;
+}
+
+.img{
+    width: 90%;
+    height: auto;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    
+}
+
+#h5{
+    padding: 10px 0 10px 40px;
+    text-align: left;
+}
+.next{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.next button{
+    margin: 10px 20px;
+    background-color:  rgb(31, 30, 30);
+   flex-basis: 30px;
+    padding:0 10px;
+    width: 60%;
+    border-radius: 4px;
+    color: white;
+    font-weight: 100;
+
+}
+.next div{
+    padding-left: 40px;
+}
+}
